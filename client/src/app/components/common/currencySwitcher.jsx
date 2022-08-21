@@ -24,7 +24,7 @@ const CurrencySwitcher = () => {
             onMouseLeave={handleClose}
         >
             <div className="btn dropdown-toggle d-flex align-items-center">
-                <span className="fs-4">{selectedCurrency.symbol}</span>
+                <span className="fs-4">{selectedCurrency?.symbol}</span>
             </div>
             <div className={"dropdown-menu" + (isOpen ? " show" : "")}>
                 {currencies.map((currency) => (
