@@ -1,0 +1,22 @@
+[
+  { "_id": "62f1508b718021ec047e0dbe", "name": "skincare", "thumbnail": "https://dummyjson.com/image/i/products/16/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dbf", "name": "groceries", "thumbnail": "https://dummyjson.com/image/i/products/21/thumbnail.png" },
+  { "_id": "62f1508b718021ec047e0dc0", "name": "home-decoration", "thumbnail": "https://dummyjson.com/image/i/products/27/thumbnail.webp" },
+  { "_id": "62f1508b718021ec047e0dbd", "name": "smartphones", "thumbnail": "https://dummyjson.com/image/i/products/1/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dc3", "name": "womens-dresses", "thumbnail": "https://dummyjson.com/image/i/products/41/thumbnail.webp" },
+  { "_id": "62f1508b718021ec047e0dc4", "name": "womens-shoes", "thumbnail": "https://dummyjson.com/image/i/products/46/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dc5", "name": "mens-shirts", "thumbnail": "https://dummyjson.com/image/i/products/51/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dc6", "name": "mens-shoes", "thumbnail": "https://dummyjson.com/image/i/products/56/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dc7", "name": "mens-watches", "thumbnail": "https://dummyjson.com/image/i/products/61/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dc8", "name": "womens-watches", "thumbnail": "https://dummyjson.com/image/i/products/66/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dc9", "name": "womens-bags", "thumbnail": "https://dummyjson.com/image/i/products/71/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dca", "name": "womens-jewellery", "thumbnail": "https://dummyjson.com/image/i/products/76/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dcc", "name": "laptops", "thumbnail": "https://dummyjson.com/image/i/products/6/thumbnail.png" },
+  { "_id": "62f1508b718021ec047e0dcb", "name": "fragrances", "thumbnail": "https://dummyjson.com/image/i/products/11/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dcd", "name": "motorcycle", "thumbnail": "https://dummyjson.com/image/i/products/91/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dce", "name": "lighting", "thumbnail": "https://dummyjson.com/image/i/products/97/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dcf", "name": "automotive", "thumbnail": "https://dummyjson.com/image/i/products/86/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dd0", "name": "sunglasses", "thumbnail": "https://dummyjson.com/image/i/products/81/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dc2","name": "tops", "thumbnail": "https://dummyjson.com/image/i/products/36/thumbnail.jpg" },
+  { "_id": "62f1508b718021ec047e0dc1", "name": "furniture", "thumbnail": "https://dummyjson.com/image/i/products/31/thumbnail.jpg" }
+]
