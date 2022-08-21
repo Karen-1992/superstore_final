@@ -15,7 +15,7 @@ const Price = ({ discount, price }) => {
             {discount > 0 ? (
                 <div className="d-flex gap-2 justify-content-center">
                     <span className="fw-bold text-nowrap">{`${finalPrice} ${selectedCurrency.symbol}`}</span>
-                    <span className="text-decoration-line-through text-nowrap">{`${price} ${selectedCurrency.symbol}`}</span>
+                    <span className="text-decoration-line-through text-nowrap">{`${convertedPrice} ${selectedCurrency.symbol}`}</span>
                     <span className="fw-semibold text-danger text-nowrap">{`-${discountValue} ${selectedCurrency.symbol}`}</span>
                 </div>
             ) : (
