@@ -14,7 +14,6 @@ import CommentsStatus from "../../ui/commentsStatus";
 import ImagesStrip from "../../ui/imagesStrip";
 import history from "../../../utils/history";
 import { getAverageRating } from "../../../utils/getAverageRating";
-import { getPriceWithDiscount } from "../../../utils/getPriceWithDiscount";
 import Price from "../../ui/price";
 import Badge from "../../common/badge";
 import { getIsNewProduct } from "../../../utils/getIsNewProduct";
@@ -63,10 +62,6 @@ const ProductPage = ({ productId }) => {
         dispatch(toggleFavorite(productId));
     };
     const productRating = getAverageRating(comments);
-    const { discountValue, finalPrice } = getPriceWithDiscount(
-        product.discountPercentage,
-        product.price
-    );
     return (
         <div className="pb-5 px-3">
             {!isLoading && !isCommentsLoading ? (
@@ -115,8 +110,6 @@ const ProductPage = ({ productId }) => {
                                 <p className="">Цена:</p>
                                 <Price
                                     discount={product.discountPercentage}
-                                    discountValue={discountValue}
-                                    finalPrice={finalPrice}
                                     price={product.price}
                                 />
                             </div>

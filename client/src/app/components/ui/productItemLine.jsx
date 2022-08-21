@@ -4,7 +4,6 @@ import ImageComponent from "../common/imageComponent";
 import { useSelector } from "react-redux";
 import { getCartProductById } from "../../store/cart";
 import { getIsFavorite } from "../../store/favorites";
-import { getPriceWithDiscount } from "../../utils/getPriceWithDiscount";
 import ProductButtons from "../common/productButtons";
 import getArtFromId from "../../utils/getArtFromId";
 import Badge from "../common/badge";
@@ -28,10 +27,6 @@ const ProductItemLine = ({
     const isInCart = !!useSelector(getCartProductById(_id));
     const isFavorite = useSelector(getIsFavorite(_id));
     const isNewProduct = getIsNewProduct(createdAt, dateNewProduct);
-    const { discountValue, finalPrice } = getPriceWithDiscount(
-        discountPercentage,
-        price
-    );
     return (
         <div key={_id} className="hover row bg-body shadow p-2 rounded">
             <div role="button" onClick={onOpenProductPage} className="col">
@@ -68,8 +63,6 @@ const ProductItemLine = ({
                 <div className="d-flex justify-content-end py-1">
                     <Price
                         discount={discountPercentage}
-                        discountValue={discountValue}
-                        finalPrice={finalPrice}
                         price={price}
                     />
                 </div>

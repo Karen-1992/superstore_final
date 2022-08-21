@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import PropTypes from "prop-types";
 import getArtFromId from "../../utils/getArtFromId";
 import Counter from "../common/counter";
-import { getPriceWithDiscount } from "../../utils/getPriceWithDiscount";
 import { getIsFavorite } from "../../store/favorites";
 import ImageComponent from "../common/imageComponent";
 import Price from "../ui/price";
@@ -32,10 +31,6 @@ const CartItem = ({
     const handleIncrement = () => {
         onIncrement(data);
     };
-    const { discountValue, finalPrice } = getPriceWithDiscount(
-        product.discountPercentage,
-        product.price
-    );
     const isNewProduct = getIsNewProduct(product.createdAt, dateNewProduct);
     return (
         <div className="row flex-nowrap border-bottom border-2 bg-body rounded mb-4 shadow">
@@ -91,9 +86,7 @@ const CartItem = ({
             </div>
             <div className="col-3 align-self-center fw-semibold fs-5">
                 <Price
-                    discount={product.discountPercentage * quantity}
-                    discountValue={discountValue}
-                    finalPrice={finalPrice * quantity}
+                    discount={product.discountPercentage}
                     price={product.price * quantity}
                 />
             </div>
